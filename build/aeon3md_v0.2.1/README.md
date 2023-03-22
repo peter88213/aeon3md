@@ -6,7 +6,8 @@
 
 ## Usage: 
 
-```aeon3md_.py [-h] [--silent] Sourcefile Suffix
+```
+aeon3md.py [-h] [--silent] Sourcefile Suffix
 
 positional arguments:
   Sourcefile  The path of the .aeon or .csv file.
@@ -21,7 +22,6 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
   --silent    suppress error messages and the request to confirm overwriting
-
 ```
 
 

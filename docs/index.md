@@ -22,7 +22,7 @@ The *aeon3md* Python script extracts the narrative part of an [Aeon Timeline 3](
 
 ## Download and install {#download}
 
-[Download the latest release (version 0.2.0)](https://raw.githubusercontent.com/peter88213/aeon3md/main/dist/aeon3md-L-0.2.0.oxt)
+[Download the latest release (version 0.2.1)](https://raw.githubusercontent.com/peter88213/aeon3md/main/dist/aeon3md-L-0.2.1.oxt)
 
 - Unpack the zipfile and copy *aeon3md.py* whereever you want.
 

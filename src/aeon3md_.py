@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Convert Aeon Timeline 3 project data to Markdown. 
 
-usage: aeon3md_.py [-h] [--silent] Sourcefile Suffix
+usage: aeon3md.py [-h] [--silent] Sourcefile Suffix
 
 positional arguments:
   Sourcefile  The path of the .aeon or .csv file.
