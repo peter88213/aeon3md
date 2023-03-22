@@ -25,5 +25,4 @@ class MdBrieflSynopsis(MdAeon):
 
     _sceneTemplate = '''$Title
     
-    
 '''

@@ -105,56 +105,56 @@ class NormalOperation(unittest.TestCase):
 
     def test_aeon_chapter_overview(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_chapter_overview')
+        aeon3md_.main(TEST_AEON, '_chapter_overview')
         if UPDATE:
             copyfile(TEST_PARTS, PARTS)
         self.assertEqual(read_file(TEST_PARTS), read_file(PARTS))
 
     def test_csv_chapter_overview(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_chapter_overview')
+        aeon3md_.main(TEST_CSV, '_chapter_overview')
         if UPDATE:
             copyfile(TEST_PARTS, PARTS)
         self.assertEqual(read_file(TEST_PARTS), read_file(PARTS))
 
     def test_aeon_brief_synopsis(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_brief_synopsis')
+        aeon3md_.main(TEST_AEON, '_brief_synopsis')
         if UPDATE:
             copyfile(TEST_CHAPTERS, CHAPTERS)
         self.assertEqual(read_file(TEST_CHAPTERS), read_file(CHAPTERS))
 
     def test_csv_brief_synopsis(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_brief_synopsis')
+        aeon3md_.main(TEST_CSV, '_brief_synopsis')
         if UPDATE:
             copyfile(TEST_CHAPTERS, CHAPTERS)
         self.assertEqual(read_file(TEST_CHAPTERS), read_file(CHAPTERS))
 
     def test_aeon_full_synopsis(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_full_synopsis')
+        aeon3md_.main(TEST_AEON, '_full_synopsis')
         if UPDATE:
             copyfile(TEST_SCENES, SCENES)
         self.assertEqual(read_file(TEST_SCENES), read_file(SCENES))
 
     def test_csv_full_synopsis(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_full_synopsis')
+        aeon3md_.main(TEST_CSV, '_full_synopsis')
         if UPDATE:
             copyfile(TEST_SCENES, SCENES)
         self.assertEqual(read_file(TEST_SCENES), read_file(SCENES))
 
     def test_aeon_character_sheets(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_character_sheets')
+        aeon3md_.main(TEST_AEON, '_character_sheets')
         if UPDATE:
             copyfile(TEST_CHARACTERS, CHARACTERS_A)
         self.assertEqual(read_file(TEST_CHARACTERS), read_file(CHARACTERS_A))
 
     def test_csv_character_sheets(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_character_sheets')
+        aeon3md_.main(TEST_CSV, '_character_sheets')
         if UPDATE:
             copyfile(TEST_CHARACTERS, CHARACTERS_C)
         self.assertEqual(read_file(TEST_CHARACTERS), read_file(CHARACTERS_C))
@@ -162,7 +162,7 @@ class NormalOperation(unittest.TestCase):
     @unittest.skip('No example available')
     def test_aeon_location_sheets(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_location_sheets')
+        aeon3md_.main(TEST_AEON, '_location_sheets')
         if UPDATE:
             copyfile(LOCATIONS, TEST_LOCATIONS)
         self.assertEqual(read_file(LOCATIONS), read_file(TEST_LOCATIONS))
@@ -170,21 +170,21 @@ class NormalOperation(unittest.TestCase):
     @unittest.skip('No example available')
     def test_csv_location_sheets(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_location_sheets')
+        aeon3md_.main(TEST_CSV, '_location_sheets')
         if UPDATE:
             copyfile(LOCATIONS, TEST_LOCATIONS)
         self.assertEqual(read_file(LOCATIONS), read_file(TEST_LOCATIONS))
 
     def test_aeon_report(self):
         copyfile(NORMAL_AEON, TEST_AEON)
-        aeon3md_.run(TEST_AEON, '_report')
+        aeon3md_.main(TEST_AEON, '_report')
         if UPDATE:
             copyfile(TEST_REPORT, REPORT_A)
         self.assertEqual(read_file(TEST_REPORT), read_file(REPORT_A))
 
     def test_csv_report(self):
         copyfile(NORMAL_CSV, TEST_CSV)
-        aeon3md_.run(TEST_CSV, '_report')
+        aeon3md_.main(TEST_CSV, '_report')
         if UPDATE:
             copyfile(TEST_REPORT, REPORT_C)
         self.assertEqual(read_file(TEST_REPORT), read_file(REPORT_C))

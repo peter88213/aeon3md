@@ -18,8 +18,7 @@ class MdLocationSheets(MdAeon):
     _locationTemplate = '''## $Title$AKA
     
     
-**$Tags**
-
+**Tags:** $Tags
 
 $Desc
 

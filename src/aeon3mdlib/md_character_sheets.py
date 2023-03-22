@@ -17,7 +17,7 @@ class MdCharacterSheets(MdAeon):
 
     _characterTemplate = '''## $Title$FullName$AKA
 
-**$Tags**
+**Tags:** $Tags
 
 
 $Bio

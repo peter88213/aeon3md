@@ -1,6 +1,6 @@
 ## Hardman
 
-****
+**Tags:** 
 
 
 The lover of Daisy Armstrong’s nurse maid
@@ -16,7 +16,7 @@ The lover of Daisy Armstrong’s nurse maid
 
 ## Foscarelli ("The Italian")
 
-****
+**Tags:** 
 
 
 Chauffer to the Armstrong household at the time of Daisy’s kidnapping.
@@ -32,7 +32,7 @@ Excessively talkative, prone to drift off-topic
 
 ## Valet
 
-****
+**Tags:** 
 
 
 Acting as Mr Ratchett’s personal valet, he was the personal servant of Colonel Armstrong, Daisy’s father.
@@ -48,7 +48,7 @@ Unemotional.
 
 ## Count
 
-****
+**Tags:** 
 
 
 Countess Andrenyi’s husband
@@ -64,7 +64,7 @@ Protective of his wife
 
 ## Coroner
 
-****
+**Tags:** 
 
 
 
@@ -80,7 +80,7 @@ Protective of his wife
 
 ## MacQueen
 
-****
+**Tags:** 
 
 
 Ratchett's personal secretary, his father was the prosecutor in the failed case.
@@ -96,7 +96,7 @@ Fluent in French.
 
 ## Arbuthnot
 
-****
+**Tags:** 
 
 
 A friend of Daisy Armstrong’s father.
@@ -112,7 +112,7 @@ Honourable and slightly stupid, according to Poirot.
 
 ## Nursemaid
 
-****
+**Tags:** 
 
 
 Committed suicide following Daisy Armstrong’s murder, when police suspicion turned to her.
@@ -128,7 +128,7 @@ Committed suicide following Daisy Armstrong’s murder, when police suspicion tu
 
 ## Hubbard
 
-****
+**Tags:** 
 
 
 Real name Linda Arden, she is Daisy Armstrong’s grandmother
@@ -145,7 +145,7 @@ Nosy, gossiping and arrogant.
 
 ## M. Bouc
 
-****
+**Tags:** 
 
 
 A friend of Poirot’s who formerly worked for Belgian police, and is now Director of the company running the Orient Express.
@@ -164,7 +164,7 @@ Prematurely seizes on circumstancial evidence, acts in a “Doctor Watson” rol
 
 ## Daisy
 
-****
+**Tags:** 
 
 
 
@@ -180,7 +180,7 @@ Prematurely seizes on circumstancial evidence, acts in a “Doctor Watson” rol
 
 ## Ratchett
 
-****
+**Tags:** 
 
 
 Real name Cassetti, kidnapped and murdered Daisy Armstrong.
@@ -196,7 +196,7 @@ Older man in his 60s, gives off a sinister impression to Poirot.
 
 ## Sonia Armstrong
 
-****
+**Tags:** 
 
 
 Mother of murder victim Daisy Armstrong, she miscarried and died as a result of stress from the assault
@@ -212,7 +212,7 @@ Mother of murder victim Daisy Armstrong, she miscarried and died as a result of 
 
 ## Countess
 
-****
+**Tags:** 
 
 
 Sonia Armstrong’s sister. With her strongest connection to Daisy Armstrong, she does not actively participate in the murder.
@@ -228,7 +228,7 @@ Sonia Armstrong’s sister. With her strongest connection to Daisy Armstrong, sh
 
 ## Hildegarde
 
-****
+**Tags:** 
 
 
 Lady’s maid working for Princess Dragomiroff.
@@ -244,7 +244,7 @@ Lady’s maid working for Princess Dragomiroff.
 
 ## Poirot
 
-****
+**Tags:** 
 
 
 
@@ -261,7 +261,7 @@ Uses innocent appearance to lull unsuspecting suspects to talk openly around him
 
 ## Conductor
 
-****
+**Tags:** 
 
 
 The father of Daisy’s nurse maid
@@ -277,7 +277,7 @@ Dependable and honourable, but not intelligent, according to Poirot.
 
 ## Intruder
 
-****
+**Tags:** 
 
 
 The unknown murderer is a decoy invented by Poirot to allow the true murderers to escape punishment
@@ -293,7 +293,7 @@ The unknown murderer is a decoy invented by Poirot to allow the true murderers t
 
 ## Mary
 
-****
+**Tags:** 
 
 
 Countess Andrenyi’s governess
@@ -309,7 +309,7 @@ Countess Andrenyi’s governess
 
 ## Princess
 
-****
+**Tags:** 
 
 
 Sonia Armstrong’s godmother
@@ -325,7 +325,7 @@ Ugly, but strong-willed.
 
 ## Greta
 
-****
+**Tags:** 
 
 
 Daisy Armstrong’s nurse
@@ -341,7 +341,7 @@ Sentimental and delicate.
 
 ## Colonel Armstrong
 
-****
+**Tags:** 
 
 
 Father of murder victim Daisy Armstrong

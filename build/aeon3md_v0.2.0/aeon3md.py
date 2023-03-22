@@ -1,12 +1,32 @@
+#!/usr/bin/python3
 """Convert Aeon Timeline 3 project data to Markdown. 
+
+usage: aeon3md_.py [-h] [--silent] Sourcefile Suffix
+
+positional arguments:
+  Sourcefile  The path of the .aeon or .csv file.
+  Suffix      The suffix of the output file, indicating the content:  
+              _full_synopsis - Part and chapter titles and scene summaries. 
+              _brief_synopsis - Part and chapter titles and scene titles.
+              _chapter_overview - Part and chapter titles.
+              _character_sheets - Character tags, summary, characteristics, traits, and notes.
+              _location_sheets - Location tags and summaries. 
+              _report - A full description of the narrative part, the characters and the locations.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --silent    suppress error messages and the request to confirm overwriting
+
 
 Copyright (c) 2023 Peter Triesberger
 For further information see https://github.com/peter88213/aeon3md
 Published under the MIT License (https://opensource.org/licenses/mit-license.php)
 """
-import sys
+import argparse
+from argparse import RawTextHelpFormatter
 import os
 ERROR = '!'
+import sys
 
 
 class Ui:
@@ -70,6 +90,66 @@ class Ui:
         To be overridden by subclasses requiring
         special action to launch the user interaction.
         """
+
+
+class UiCmd(Ui):
+    """Ui subclass implementing a console interface.
+    
+    Public methods:
+        ask_yes_no(text) -- query yes or no at the console.
+        set_info_what(message) -- show what the converter is going to do.
+        set_info_how(message) -- show how the converter is doing.
+    """
+
+    def __init__(self, title):
+        """Print the title.
+        
+        Positional arguments:
+            title -- application title to be displayed at the console.
+        
+        Extends the superclass constructor.
+        """
+        super().__init__(title)
+        print(title)
+
+    def ask_yes_no(self, text):
+        """Query yes or no at the console.
+        
+        Positional arguments:
+            text -- question to be asked at the console. 
+            
+        Overrides the superclass method.       
+        """
+        result = input(f'WARNING: {text} (y/n)')
+        if result.lower() == 'y':
+            return True
+        else:
+            return False
+
+    def set_info_what(self, message):
+        """Show what the converter is going to do.
+        
+        Positional arguments:
+            message -- message to be printed at the console. 
+            
+        Print the message.
+        Overrides the superclass method.
+        """
+        print(message)
+
+    def set_info_how(self, message):
+        """Show how the converter is doing.
+
+        Positional arguments:
+            message -- message to be printed at the console. 
+            
+        Print the message, replacing the error marker, if any.
+        Overrides the superclass method.
+        """
+        if message.startswith(ERROR):
+            message = f'FAIL: {message.split(ERROR, maxsplit=1)[1].strip()}'
+        self.infoHowText = message
+        print(message)
 from configparser import ConfigParser
 
 
@@ -2748,21 +2828,20 @@ class MdFullSynopsis(MdAeon):
     SUFFIX = '_full_synopsis'
 
     _partTemplate = '''# $Title
+    
 '''
 
     _chapterTemplate = '''## $Title
+    
 '''
 
     _sceneTemplate = '''<!--- $Title --->
 
-
 $Desc
-
 
 '''
 
     _sceneDivider = '''* * *
-
 
 '''
 
@@ -2784,7 +2863,6 @@ class MdBrieflSynopsis(MdAeon):
 '''
 
     _sceneTemplate = '''$Title
-    
     
 '''
 
@@ -2816,7 +2894,7 @@ class MdCharacterSheets(MdAeon):
 
     _characterTemplate = '''## $Title$FullName$AKA
 
-**$Tags**
+**Tags:** $Tags
 
 
 $Bio
@@ -2844,8 +2922,7 @@ class MdLocationSheets(MdAeon):
     _locationTemplate = '''## $Title$AKA
     
     
-**$Tags**
-
+**Tags:** $Tags
 
 $Desc
 
@@ -2967,10 +3044,12 @@ SETTINGS = dict(
 )
 
 
-def run(sourcePath, suffix='', installDir=''):
-    ui = Ui('')
+def main(sourcePath, suffix='', silent=True, installDir=''):
     converter = Aeon3mdConverter()
-    converter.ui = ui
+    if silent:
+        converter.ui = Ui('')
+    else:
+        converter.ui = UiCmd('Convert Aeon Timeline 3 project data to Markdown.')
     iniFileName = 'aeon3yw.ini'
     sourceDir = os.path.dirname(sourcePath)
     if not sourceDir:
@@ -2988,4 +3067,22 @@ def run(sourcePath, suffix='', installDir=''):
 
 
 if __name__ == '__main__':
-    run(sys.argv[1], sys.argv[2], '')
+    parser = argparse.ArgumentParser(
+        description='Convert Aeon Timeline 3 project data to Markdown.',
+        epilog='', formatter_class=RawTextHelpFormatter)
+    parser.add_argument('sourcePath', metavar='Sourcefile',
+                        help='The path of the .aeon or .csv file.')
+    parser.add_argument('suffix', metavar='Suffix',
+                        help='''The suffix of the output file, indicating the content:                       
+_full_synopsis - Part and chapter titles and scene summaries. 
+_brief_synopsis - Part and chapter titles and scene titles.
+_chapter_overview - Part and chapter titles.
+_character_sheets - Character tags, summary, characteristics, traits, and notes.
+_location_sheets - Location tags and summaries. 
+_report - A full description of the narrative part, the characters and the locations.''')
+    parser.add_argument('--silent',
+                        action="store_true",
+                        help='suppress error messages and the request to confirm overwriting')
+    args = parser.parse_args()
+    main(args.sourcePath, args.suffix, args.silent)
+

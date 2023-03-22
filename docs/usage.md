@@ -4,6 +4,27 @@
 
 # Aeon Timeline 3 data conversion
 
+## Usage: 
+
+```aeon3md_.py [-h] [--silent] Sourcefile Suffix
+
+positional arguments:
+  Sourcefile  The path of the .aeon or .csv file.
+  Suffix      The suffix of the output file, indicating the content:  
+              _full_synopsis - Part and chapter titles and scene summaries. 
+              _brief_synopsis - Part and chapter titles and scene titles.
+              _chapter_overview - Part and chapter titles.
+              _character_sheets - Character tags, summary, characteristics, traits, and notes.
+              _location_sheets - Location tags and summaries. 
+              _report - A full description of the narrative part, the characters and the locations.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --silent    suppress error messages and the request to confirm overwriting
+
+```
+
+
 ## Document hierarchy
 
 In the narrative of an **".aeon" project file**, the top three levels of hierarchy are considered. There are two alternatives:
@@ -62,87 +83,6 @@ Instead of an *.aeon* file, you can optionally select a *.csv* file exported by 
 - Make sure all *Item Types for Export* checkboxes are ticked.
 
 ![Screenshot: Aeon 3 Export settings](https://raw.githubusercontent.com/peter88213/aeon3md/main/docs/Screenshots/csv_export.png)
-
-## Command reference
-
-### "Files" menu
-
--   [Full synopsis](#full-synopsis)
--   [Brief synopsis](#brief-synopsis)
--   [Chapter overview](#chapter-overview)
--   [Character sheets](#character-sheets)
--   [Location sheets](#location-sheets)
--   [Project report](#project-report)
-
-------------------------------------------------------------------------
-
-## Full synopsis
-
-This will generate a new Markdown file (md) containing part 
-and chapter titles and scene summaries. 
-
-Scene titles are inserted as navigable comments.
-
-File name suffix is `_full_synopsis`.
-
-[Top of page](#top)
-
-------------------------------------------------------------------------
-
-## Brief synopsis
-
-This will generate a new Markdown file (md) containing part
-and chapter titles and scene titles. 
-
-File name suffix is `_brief_synopsis`.
-
-[Top of page](#top)
-
-------------------------------------------------------------------------
-
-## Chapter overview
-
-This will generate a new Markdown file (md) containing part
-and chapter titles. 
-
-File name suffix is `_chapter_overview`.
-
-[Top of page](#top)
-
-------------------------------------------------------------------------
-
-## Character sheets
-
-This will generate a new Markdown file (md) containing
-character tags, summary, characteristics, traits, and notes. 
-
-File name suffix is
-`_character_sheets`.
-
-[Top of page](#top)
-
-------------------------------------------------------------------------
-
-## Location sheets
-
-This will generate a new Markdown file (md) containing
-location tags and summaries. 
-
-File name suffix is `_location_sheets`.
-
-[Top of page](#top)
-
-------------------------------------------------------------------------
-
-
-## Project report
-
-This will generate a new Markdown file (md) containing 
-a full description of the narrative part, the characters and the locations. 
- 
-File name suffix is `_report`.
-
-[Top of page](#top)
 
 ------------------------------------------------------------------------
 

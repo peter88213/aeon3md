@@ -16,20 +16,19 @@ class MdFullSynopsis(MdAeon):
     SUFFIX = '_full_synopsis'
 
     _partTemplate = '''# $Title
+    
 '''
 
     _chapterTemplate = '''## $Title
+    
 '''
 
     _sceneTemplate = '''<!--- $Title --->
 
-
 $Desc
-
 
 '''
 
     _sceneDivider = '''* * *
-
 
 '''
