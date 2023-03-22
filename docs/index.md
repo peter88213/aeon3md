@@ -37,15 +37,3 @@ See the [instructions for use](usage)
 This extension is distributed under the [MIT
 License](http://www.opensource.org/licenses/mit-license.php).
 
-## See also
-
-### The "curly" extensions for OpenOffice and LibreOffice
-"Curly quotes" conversion.
-
-[![](https://peter88213.github.io/img/curly_thumb.png)](https://peter88213.github.io/curly/)
-
-### The StyleSwitcher extension for OpenOffice and LibreOffice
-A style switcher extension.
-
-[![](https://peter88213.github.io/img/styleswitcher_thumb.png)](https://peter88213.github.io/StyleSwitcher/)
-
