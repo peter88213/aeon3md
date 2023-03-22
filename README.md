@@ -1,4 +1,4 @@
-# The aeon3md extension for LibreOffice: Import Aeon Timeline 3 project data
+# The aeon3md Python script: Convert Aeon Timeline 3 project data to Markdown
 
 For more information, see the [project homepage](https://peter88213.github.io/aeon3md) with description and download instructions.
 

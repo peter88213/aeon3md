@@ -1,5 +1,3 @@
-![screenshot](Screenshots/lo_menu.png)
-
 The *aeon3md* Python script extracts the narrative part of an [Aeon Timeline 3](https://timeline.app/) project and generates several types of Markdown documents.
 
 ## Features
