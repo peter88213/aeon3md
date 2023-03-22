@@ -18,14 +18,9 @@ Please note that this extension has not yet been extensively tested. To me, it's
 ### Development tools
 
 - [Python](https://python.org) version 3.9
-- [Eclipse IDE](https://eclipse.org) with [PyDev](https://pydev.org) and [EGit](https://www.eclipse.org/egit/)
+- [Eclipse IDE](https://eclipse.org) with [PyDev](https://pydev.org) and EGit
 - [Apache Ant](https://ant.apache.org/) for building the application script
-- [pandoc](https://pandoc.org/) for building the HTML help pages
-
-## Credits
-
-- [OpenOffice Extension Compiler](https://wiki.openoffice.org/wiki/Extensions_Packager#Extension_Compiler) by Bernard Marcelly.
 
 ## License
 
-This extension is distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+*aeon3md* is distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).

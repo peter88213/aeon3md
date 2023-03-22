@@ -1,6 +1,6 @@
 ![screenshot](Screenshots/lo_menu.png)
 
-The *aeon3md* extension for LibreOffice extracts the narrative part of an [Aeon Timeline 3](https://timeline.app/) project and generates several types of Markdown documents.
+The *aeon3md* Python script extracts the narrative part of an [Aeon Timeline 3](https://timeline.app/) project and generates several types of Markdown documents.
 
 ## Features
 
@@ -20,38 +20,19 @@ The *aeon3md* extension for LibreOffice extracts the narrative part of an [Aeon 
 
 ## Requirements
 
--   [LibreOffice version 7.0+](https://www.libreoffice.org/).
-
-__Please note:__  _This extension can not be installed on OpenOffice._
+- [Python](https://www.python.org/) version 3.6+.
 
 ## Download and install {#download}
 
 [Download the latest release (version 0.99.0)](https://raw.githubusercontent.com/peter88213/aeon3md/main/dist/aeon3md-L-0.99.0.oxt)
 
--   Installation right at download, by double-clicking on the downloaded 
-    file, or via the LibreOffice Extension Manager. Instructions can be found [here](https://wiki.documentfoundation.org/Documentation/HowTo/install_extension).
-
--   After installation (and Office restart) you find a new "Aeon Timeline 3
-    Import" submenu in the "Files" menu.
-
--   If no additional "Aeon Timeline 3 Import" submenu shows up in the
-    "Files" menu, please look at the "Tools" > "Extensions" menu.
+- Unpack the zipfile and copy *aeon3md.py* whereever you want.
 
 [Changelog](changelog)
 
-## Instructions for use
+## Usage, Markdown reference
 
-You can find more information on the [help pages](help).
-
-## Get updates
-
-This extension supports the update mechanism of LibreOffice. You can let the Extension Manager check for updates from time to time to get the latest release.
-
-## Credits
-
-[OpenOffice Extension
-Compiler](https://wiki.openoffice.org/wiki/Extensions_Packager#Extension_Compiler)
-by Bernard Marcelly.
+See the [instructions for use](usage)
 
 ## License
 

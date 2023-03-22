@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------
 
-# Aeon Timeline 3 import
+# Aeon Timeline 3 data conversion
 
 ## Document hierarchy
 
@@ -28,7 +28,7 @@ When using a **".csv" export file** instead, the document structure is given by 
 
 ## Set up your timeline
 
-The *aeon3md* extension uses the type designations as defined in Aeon's novel template:
+The *aeon3md* script uses the type designations as defined in Aeon's novel template:
 
 ### Types and roles
 
@@ -38,7 +38,7 @@ The *aeon3md* extension uses the type designations as defined in Aeon's novel te
 - **Participant** as character role for scenes.
 - **Location** as location role for scenes.
 
-If you use labels other than the ones listed above, you can customize this extension by providing an *aeon3yw.ini* configuration file as described in the [aeon3yw](https://peter88213.github.io/aeon3yw/) project.
+If you use labels other than the ones listed above, you can customize this script by providing an *aeon3yw.ini* configuration file as described in the [aeon3yw](https://peter88213.github.io/aeon3yw/) project.
 
 - Global configuration file on Windows: `c:\Users\<user name>\.pywriter\aeon3yw\config\aeon3yw.ini`
 - Local project configuration file name on Windows: `<project directory>\aeon3yw.ini`
@@ -78,7 +78,7 @@ Instead of an *.aeon* file, you can optionally select a *.csv* file exported by 
 
 ## Full synopsis
 
-This will generate a new OpenDocument text document (odt) containing part 
+This will generate a new Markdown file (md) containing part 
 and chapter titles and scene summaries. 
 
 Scene titles are inserted as navigable comments.
@@ -91,7 +91,7 @@ File name suffix is `_full_synopsis`.
 
 ## Brief synopsis
 
-This will generate a new OpenDocument text document (odt) containing part
+This will generate a new Markdown file (md) containing part
 and chapter titles and scene titles. 
 
 File name suffix is `_brief_synopsis`.
@@ -102,7 +102,7 @@ File name suffix is `_brief_synopsis`.
 
 ## Chapter overview
 
-This will generate a new OpenDocument text document (odt) containing part
+This will generate a new Markdown file (md) containing part
 and chapter titles. 
 
 File name suffix is `_chapter_overview`.
@@ -113,7 +113,7 @@ File name suffix is `_chapter_overview`.
 
 ## Character sheets
 
-This will generate a new OpenDocument text document (odt) containing
+This will generate a new Markdown file (md) containing
 character tags, summary, characteristics, traits, and notes. 
 
 File name suffix is
@@ -125,7 +125,7 @@ File name suffix is
 
 ## Location sheets
 
-This will generate a new OpenDocument text document (odt) containing
+This will generate a new Markdown file (md) containing
 location tags and summaries. 
 
 File name suffix is `_location_sheets`.
@@ -137,7 +137,7 @@ File name suffix is `_location_sheets`.
 
 ## Project report
 
-This will generate a new OpenDocument text document (odt) containing 
+This will generate a new Markdown file (md) containing 
 a full description of the narrative part, the characters and the locations. 
  
 File name suffix is `_report`.
@@ -145,4 +145,36 @@ File name suffix is `_report`.
 [Top of page](#top)
 
 ------------------------------------------------------------------------
+
+## Markdown reference
+
+By default, *aeon3md* uses a Markdown subset according to the following specificatiions:
+
+### Paragraphs
+
+Paragraphs in Markdown are separated by a blank line.
+
+### Headings
+
+#### Level 1 heading used for parts (chapters marked as beginning of a new section in yWriter)
+`# One hash character at the start of the line`
+
+#### Level 2 heading used for chapters
+`## Two hash characters at the start of the line`
+
+### Emphasis
+
+#### Italic 
+`*single asterisks*`
+
+**Note** : A `*` surrounded with spaces will be treated as a literal asterisk.
+
+#### Bold 
+`**double asterisks**`
+
+### Comments
+
+- Comments at the start of a scene are scene titles.
+
+`<!---A HTML comment with one additional hyphen--->`
 
