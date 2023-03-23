@@ -1,4 +1,5 @@
 /test/yw7/
-/test/aeon2md.py
+/test/aeon3md.py
+/test/test_aeon3md.py
 *.pyc
 *.bak

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="aeon3md" basedir=".">
-	<property name="version" value="0.2.1" />
+	<property name="version" value="0.3.0" />
 	<property name="test-app" value="aeon3md" />
 	
 	<property name="source-path" location="../src" />
@@ -36,14 +36,15 @@
 		<copy file="${test-path}/${test-app}.py" tofile="${build-path}/${release}/${application}.py" />
 		<replace encoding="utf-8" file="${build-path}/${release}/${application}.py" token="@release" value="${version}" />
 		
-		<!--copy file="${source-path}/setup.py" todir="${build-path}/${release}" /-->		
-		<!--replace encoding="utf-8" file="${build-path}/${release}/setup.py" token="@release" value="${version}" /-->
-
 		<copy file="../LICENSE" todir="${build-path}/${release}" />	
 		<copy file="${docs-path}/usage.md" tofile="${build-path}/${release}/README.md" />
 		
-		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
+		<copy todir="${build-path}/${release}" failonerror="false"> 
+			<fileset dir="../sample" />
+		</copy>		
 		
+		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
+
 		<zip destfile="${dist-path}/${release}.zip" basedir="${build-path}/${release}" />
 		
 		<copy file="${docs-path}/template/index.md" overwrite="True" todir="${docs-path}" />

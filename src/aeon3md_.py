@@ -15,7 +15,7 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-  --silent    suppress error messages and the request to confirm overwriting
+  --silent    suppress messages and the request to confirm overwriting
 
 
 Copyright (c) 2023 Peter Triesberger
@@ -56,19 +56,28 @@ SETTINGS = dict(
 )
 
 
-def main(sourcePath, suffix='', silent=True, installDir=''):
+def main(sourcePath, suffix, silent=True):
+    """Convert an .aeon or .csv source file to a Markdown target file.
+    
+    Positional arguments:
+        sourcePath -- str: The path of the .aeon or .csv file.
+        suffix -- str: The suffix of the output file, indicating the content.
+        
+    Optional arguments:
+        silent -- boolean: If True, suppress messages and the request to confirm overwriting.    
+    """
     converter = Aeon3mdConverter()
     if silent:
         converter.ui = Ui('')
     else:
         converter.ui = UiCmd('Convert Aeon Timeline 3 project data to Markdown.')
-    iniFileName = 'aeon3yw.ini'
+    iniFileName = 'aeon3md.ini'
     sourceDir = os.path.dirname(sourcePath)
     if not sourceDir:
         sourceDir = './'
     else:
         sourceDir += '/'
-    iniFiles = [f'{installDir}{iniFileName}', f'{sourceDir}{iniFileName}']
+    iniFiles = [f'{sourceDir}{iniFileName}']
     configuration = Configuration(SETTINGS)
     for iniFile in iniFiles:
         configuration.read(iniFile)
@@ -94,7 +103,7 @@ _location_sheets - Location tags and summaries.
 _report - A full description of the narrative part, the characters and the locations.''')
     parser.add_argument('--silent',
                         action="store_true",
-                        help='suppress error messages and the request to confirm overwriting')
+                        help='suppress messages and the request to confirm overwriting')
     args = parser.parse_args()
     main(args.sourcePath, args.suffix, args.silent)
 

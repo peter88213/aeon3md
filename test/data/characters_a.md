@@ -138,6 +138,7 @@ Real name Linda Arden, she is Daisy Armstrong’s grandmother
 
 
 "Distintively American”, according to fellow passengers.  
+
 Nosy, gossiping and arrogant.
 
 
@@ -150,6 +151,8 @@ Nosy, gossiping and arrogant.
 
 A friend of Poirot’s who formerly worked for Belgian police, and is now Director of the company running the Orient Express.
 
+
+
 He prematurely seizes on circumstancial evidence, acting as a “Dr Watson” within the plot. His primary purpose is to have Poirot correct him and explain his thoughts to him.
 
 
@@ -157,6 +160,7 @@ He prematurely seizes on circumstancial evidence, acting as a “Dr Watson” wi
 
 
 Racist, distrusts italians
+
 Prematurely seizes on circumstancial evidence, acts in a “Doctor Watson” role that allows Poirot to talk to the reader by correcting him.
 
 
@@ -254,6 +258,7 @@ Lady’s maid working for Princess Dragomiroff.
 
 
 Short, bald man devoted to fashion and tidiness.
+
 Uses innocent appearance to lull unsuspecting suspects to talk openly around him.
 
 

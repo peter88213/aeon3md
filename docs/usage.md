@@ -21,7 +21,7 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-  --silent    suppress error messages and the request to confirm overwriting
+  --silent    suppress messages and the request to confirm overwriting
 ```
 
 
@@ -59,10 +59,8 @@ The *aeon3md* script uses the type designations as defined in Aeon's novel templ
 - **Participant** as character role for scenes.
 - **Location** as location role for scenes.
 
-If you use labels other than the ones listed above, you can customize this script by providing an *aeon3yw.ini* configuration file as described in the [aeon3yw](https://peter88213.github.io/aeon3yw/) project.
-
-- Global configuration file on Windows: `c:\Users\<user name>\.pywriter\aeon3yw\config\aeon3yw.ini`
-- Local project configuration file name on Windows: `<project directory>\aeon3yw.ini`
+If you use labels other than the ones listed above, you can customize this script by providing an *aeon3md.ini* configuration file.
+For this, just copy the **aeon3md.ini** file to your project folder and edit it. 
 
 ### Date/Time
 

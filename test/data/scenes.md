@@ -155,10 +155,12 @@ Each of the passengers is introduced and described in turn.
 <!--- Poirot examines the dead man's body and compartment --->
 
 12 stab wounds to the body
-Ratchett was already dead for some time before some of the stabs
-Some left handed, some right handed
-Some weak, some strong
 
+Ratchett was already dead for some time before some of the stabs
+
+Some left handed, some right handed
+
+Some weak, some strong
 
 * * *
 
@@ -201,7 +203,6 @@ The hands point to 1:15
 <!--- Poirot recognises the name, and instantly knows the true identity of Ratchett as an American named Cassetti. --->
 
 A man responsible for the kidnap and murder of a little girl called Daisy Armstrong
-
 
 ## Chapter 8
     

@@ -41,3 +41,20 @@ class MdAeon(FileExport):
         if self.locations[lcId].aka:
             locationMapping['AKA'] = f' ("{self.locations[lcId].aka}")'
         return locationMapping
+
+    def _convert_from_yw(self, text, quick=False):
+        """Return text, converted from yw7 markup to target format.
+        
+        Positional arguments:
+            text -- string to convert.
+        
+        Optional arguments:
+            quick -- bool: if True, apply a conversion mode for one-liners without formatting.
+        
+        Overrides the superclass method.
+        """
+        if text is None:
+            text = ''
+        else:
+            text = text.strip().replace('\n', '\n\n')
+        return(text)
