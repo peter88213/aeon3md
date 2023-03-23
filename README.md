@@ -8,18 +8,17 @@ For more information, see the [project homepage](https://peter88213.github.io/ae
 
 ## Important
 
-Please note that this extension has not yet been extensively tested. To me, it's actually just a proof of concept. I probably won't develop the extension further. Feel free to copy the project and modify it to your own liking.
+Please note that this script has not yet been extensively tested. To me, it's actually just a proof of concept. I probably won't develop the script further. Feel free to copy the project and modify it to your own liking.
 
 ### Conventions
 
-- Minimum Python version is 3.6. 
-- The Python **source code formatting** follows widely the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide, except the maximum line length, which is 120 characters here.
+See https://github.com/peter88213/PyWriter/blob/main/docs/conventions.md
 
 ### Development tools
 
-- [Python](https://python.org) version 3.9
-- [Eclipse IDE](https://eclipse.org) with [PyDev](https://pydev.org) and EGit
-- [Apache Ant](https://ant.apache.org/) for building the application script
+- [Python](https://python.org) version 3.9.
+- [Eclipse IDE](https://eclipse.org) with [PyDev](https://pydev.org) and EGit.
+- Apache Ant is used for building the application.
 
 ## License
 
