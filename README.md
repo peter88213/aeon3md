@@ -18,6 +18,7 @@ Exceptions:
 - No localization is required.
 - The directory structure is modified to minimize dependencies:
 
+```
 .
 └── aeon3md/
     ├── src/
@@ -29,6 +30,7 @@ Exceptions:
         ├── build_aeon3md.py
         ├── build.xml
         └── inliner.py
+```
 
 ### Development tools
 
