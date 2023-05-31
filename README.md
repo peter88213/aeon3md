@@ -34,7 +34,7 @@ Exceptions:
 
 ### Development tools
 
-- [Python](https://python.org) version 3.9.
+- [Python](https://python.org) version 3.10.
 - [Eclipse IDE](https://eclipse.org) with [PyDev](https://pydev.org) and EGit.
 - Apache Ant is used for building the application.
 
