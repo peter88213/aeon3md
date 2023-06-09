@@ -1,5 +1,6 @@
-""" Build  a stub for the aeon3md unit tests.
+"""Build a stub for the aeon3md regression test.
 
+Copyright (c) 2023 Peter Triesberger
 For further information see https://github.com/peter88213/aeon3md
 Published under the MIT License (https://opensource.org/licenses/mit-license.php)
 """
