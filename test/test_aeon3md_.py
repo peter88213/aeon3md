@@ -17,7 +17,7 @@ UPDATE = False
 
 TEST_PATH = os.getcwd() + '/../test'
 TEST_DATA_PATH = TEST_PATH + '/data/'
-TEST_EXEC_PATH = TEST_PATH + '/yw7/'
+TEST_EXEC_PATH = TEST_PATH + '/'
 
 NORMAL_AEON = TEST_DATA_PATH + 'normal.aeon'
 NORMAL_CSV = TEST_DATA_PATH + 'normal.csv'
@@ -55,6 +55,11 @@ def remove_all_testfiles():
 
     try:
         os.remove(TEST_CSV)
+    except:
+        pass
+
+    try:
+        os.remove(TEST_AEON)
     except:
         pass
 
