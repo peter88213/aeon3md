@@ -1,4 +1,4 @@
-""" Python unit tests for the aeon3md project.
+""" Regression test for the aeon3md project.
 
 Test suite for aeon3md_.py
 
