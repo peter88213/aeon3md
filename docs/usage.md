@@ -12,6 +12,7 @@ aeon3md.py [-h] [--silent] Sourcefile Suffix
 positional arguments:
   Sourcefile  The path of the .aeon or .csv file.
   Suffix      The suffix of the output file, indicating the content:  
+              _outline - Part and chapter titles. Scene summaries as comments. 
               _full_synopsis - Part and chapter titles and scene summaries. 
               _brief_synopsis - Part and chapter titles and scene titles.
               _chapter_overview - Part and chapter titles.
@@ -53,6 +54,7 @@ The *aeon3md* script uses the type designations as defined in Aeon's novel templ
 
 ### Types and roles
 
+- **Outline** - Part and chapter titles. Scene summaries as comments. 
 - **Summary** as detailed description. 
 - **Character** as item type for persons.
 - **Location** as item type for places.

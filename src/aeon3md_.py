@@ -6,6 +6,7 @@ usage: aeon3md.py [-h] [--silent] Sourcefile Suffix
 positional arguments:
   Sourcefile  The path of the .aeon or .csv file.
   Suffix      The suffix of the output file, indicating the content:  
+              _outline - Part and chapter titles. Scene summaries as comments. 
               _full_synopsis - Part and chapter titles and scene summaries. 
               _brief_synopsis - Part and chapter titles and scene titles.
               _chapter_overview - Part and chapter titles.
@@ -95,6 +96,7 @@ if __name__ == '__main__':
                         help='The path of the .aeon or .csv file.')
     parser.add_argument('suffix', metavar='Suffix',
                         help='''The suffix of the output file, indicating the content:                       
+_outline - Part and chapter titles. Scene summaries as comments. 
 _full_synopsis - Part and chapter titles and scene summaries. 
 _brief_synopsis - Part and chapter titles and scene titles.
 _chapter_overview - Part and chapter titles.

@@ -7,13 +7,13 @@ Published under the MIT License (https://opensource.org/licenses/mit-license.php
 from aeon3mdlib.md_aeon import MdAeon
 
 
-class MdFullSynopsis(MdAeon):
+class MdOutline(MdAeon):
     """Markdown scene summaries file representation.
 
     Export a full synopsis.
     """
-    DESCRIPTION = 'Full synopsis'
-    SUFFIX = '_full_synopsis'
+    DESCRIPTION = 'Outline'
+    SUFFIX = '_outline'
 
     _partTemplate = '''# $Title
     
@@ -23,7 +23,7 @@ class MdFullSynopsis(MdAeon):
     
 '''
 
-    _sceneTemplate = '''$Title
+    _sceneTemplate = '''<!--- $Title --->
 
 $Desc
 

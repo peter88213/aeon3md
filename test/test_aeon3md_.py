@@ -24,6 +24,7 @@ NORMAL_CSV = TEST_DATA_PATH + 'normal.csv'
 PARTS = TEST_DATA_PATH + 'parts.md'
 CHAPTERS = TEST_DATA_PATH + 'chapters.md'
 SCENES = TEST_DATA_PATH + 'scenes.md'
+OUTLINE = TEST_DATA_PATH + 'outline.md'
 CHARACTERS_A = TEST_DATA_PATH + 'characters_a.md'
 CHARACTERS_C = TEST_DATA_PATH + 'characters_c.md'
 LOCATIONS = TEST_DATA_PATH + 'locations.md'
@@ -39,6 +40,7 @@ TEST_SCENES = TEST_EXEC_PATH + 'yw7 Sample Project_full_synopsis.md'
 TEST_CHARACTERS = TEST_EXEC_PATH + 'yw7 Sample Project_character_sheets.md'
 TEST_LOCATIONS = TEST_EXEC_PATH + 'yw7 Sample Project_location_sheets.md'
 TEST_REPORT = TEST_EXEC_PATH + 'yw7 Sample Project_report.md'
+TEST_OUTLINE = TEST_EXEC_PATH + 'yw7 Sample Project_outline.md'
 
 
 def read_file(inputFile):
@@ -141,6 +143,13 @@ class NormalOperation(unittest.TestCase):
         if UPDATE:
             copyfile(TEST_SCENES, SCENES)
         self.assertEqual(read_file(TEST_SCENES), read_file(SCENES))
+
+    def test_aeon_outline(self):
+        copyfile(NORMAL_AEON, TEST_AEON)
+        aeon3md_.main(TEST_AEON, '_outline')
+        if UPDATE:
+            copyfile(TEST_OUTLINE, OUTLINE)
+        self.assertEqual(read_file(TEST_OUTLINE), read_file(OUTLINE))
 
     def test_csv_full_synopsis(self):
         copyfile(NORMAL_CSV, TEST_CSV)

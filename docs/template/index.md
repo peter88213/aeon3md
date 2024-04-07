@@ -3,16 +3,12 @@ The *aeon3md* Python script extracts the narrative part of an [Aeon Timeline 3](
 ## Features
 
 
+-   Generate an **outline** from the narrative part. 
 -   Generate a **full synopsis** containing scene summaries.
-
 -   Generate a **brief synopsis** containing scene titles.
-
 -   Generate a **chapter overview** containing chapter titles.
-
 -   Generate **character sheets** containing character data.
-
 -   Generate **location sheets** containing location data.
-
 -   Generate a **project report** containing a full description of the narrative part, the characters and the locations.
 
 
