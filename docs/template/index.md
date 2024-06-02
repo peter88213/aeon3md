@@ -16,6 +16,8 @@ The *aeon3md* Python script extracts the narrative part of an [Aeon Timeline 3](
 
 - [Python](https://www.python.org/) version 3.6+.
 
+**According to recent user feedback, the Aeon Timeline 3 file format has been changed, so this script might not work for you.**
+
 ## Download and install {#download}
 
 [Download the latest release (version 0.99.0)](https://raw.githubusercontent.com/peter88213/aeon3md/main/dist/aeon3md_v0.99.0.zip)

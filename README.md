@@ -10,6 +10,8 @@ For more information, see the [project homepage](https://peter88213.github.io/ae
 
 Please note that this script has not yet been extensively tested. To me, it's actually just a proof of concept. I probably won't develop the script further. Feel free to copy the project and modify it to your own liking.
 
+**According to recent user feedback, the Aeon Timeline 3 file format has been changed, so this script might not work for you.**
+
 ### Conventions
 
 See https://github.com/peter88213/PyWriter/blob/main/docs/conventions.md
